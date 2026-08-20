@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+</head>
+<title>Poni salvaje🐴</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="favicon.ico">
+
+<!--El estilo va antes del body-->
+<style>
+  .mySlides {
+    display: none;
+  }
+</style>
+
+<body>
+
+  <!--etiqueta donde esta el titulo -->
+  <div class="w3-container w3-teal">
+    <h1>Subasta ecuestre</h1>
+  </div>
+  <!--Barra de navegacion-->
+  <div class="w3-bar w3-pale-green">
+    <a href="#" class="w3-bar-item w3-button">Inicio</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small">Quienes somos</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small">Mision</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small">Vision</a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+      onclick="myFunction()">&#9776;</a>
+  </div>
+  <!--Navegacion de dispositivos pequeños-->
+  <div id="demo" class="w3-bar-block w3-green w3-hide w3-hide-large w3-hide-medium">
+    <a href="#" class="w3-bar-item w3-button">Quienes somos</a>
+    <a href="#" class="w3-bar-item w3-button">Mision</a>
+    <a href="#" class="w3-bar-item w3-button">Vision</a>
+  </div>
+
+  <!--Carrusel de imagenes-->
+  <div class="w3-content w3-section" style="max-width:500px">
+    <img class="mySlides w3-animate-fading" src="one.jpg" style="width:100%">
+    <img class="mySlides w3-animate-fading" src="two.jpg" style="width:100%">
+    <img class="mySlides w3-animate-fading" src="three.jpg" style="width:100%">
+  </div>
+  <!--Alerta -->
+  <div class="w3-panel w3-light-blue w3-display-container">
+    <span onclick="this.parentElement.style.display='none'"
+      class="w3-button w3-large w3-display-topright">&times;</span>
+    <h3>¡¡Atencion!!</h3>
+    <p>Recuerde participar en nuestra subasta anual de los mejores ejemplares de tipo ecuestre.</p>
+  </div>
+
+  <!--Parrafo con informacion-->
+<div class="w3-container w3-centered w3-card-4 w3-pale-green w3-text-black w3-margin">
+  <p>El caballo (Equus ferus caballus) ​ ​ es un mamífero perisodáctilo domesticado de la familia de los équidos.
+    Es un herbívoro perisodáctilo de gran porte, y cuello largo y arqueado poblado por largas crines.
+    A la hembra del caballo se le llama yegua y a las crías, si son machos, potros o potrillos,
+    y si son hembras, potras o potrancas. La cría y utilización del caballo por parte del hombre
+    se conoce como ganadería equina o caballar, y su domesticación se remonta a 3600 a. C., en la región
+    de Kazajistán.
+  </p>
+</div> 
+
+  <div class="w3-container">
+    <h2>Nuestros mejores ejemplares</h2>
+
+    <table class="w3-table-all w3-centered">
+      <tr>
+        <th>Caballo andaluz</th>
+        <th>Caballo de raza española originario de Andalucía. Está considerado oficialmente como “Pura raza Española”,
+          conocido también comúnmente como “caballo español”. Pertenece a una de las razas equinas más antiguas del
+          mundo,</th>
+      </tr>
+      <tr>
+        <td>Caballo arabe</td>
+        <td>Caballo de raza árabe considerados genéticamente puros.Se ha ganado su prestigio gracias a su fuerza,
+          resistencia e inteligencia, son de carácter afable y de confianza por lo que mantienen una relación cercana
+          con las personas.</td>
+      </tr>
+      <tr>
+        <td>Tennessee walking horse</td>
+        <td>Caballo originario de EEUU. Al igual que los caballos silla de Kentucky ambas razas se originaron tras el
+          cruce de diferentes razas Morgan con Saddle red y pura sangre. Estos animales fueron elegidos por los pioneros
+          y plantadores de algodón por su robustez y valentía</td>
+      </tr>
+      <tr>
+        <td>Pura sangre ingles</td>
+        <td>Esta raza se desarrolló entre el siglo XVII y XVIII tras cruzar yeguas inglesas con sementales árabes.se
+          reconoce por su cuerpo largo y estilizado. La cabeza constantemente avizor y con poco musculo sobre su
+          mandíbula, sus extremidades se presentan musculosas, largas y delgadas</td>
+      </tr>
+    </table>
+  </div>
+  <!--imagen y ejemplo de que texto saldria sino encuentra la imagen// lo remplace con el carrusel-->
+  <!--<img src="check.jpg" alt="Imagen otro.jpg no esta disponible" style="width: 100%;">-->
+
+  <!--Formulario de contacto-->
+  <form action="sendbymail.php" method="POST" class="w3-container w3-card-4 w3-pale-green w3-text-green w3-margin">
+    <h2 class="w3-center">Contactenos para formalizar su compra </h2>
+
+    <div class="w3-row w3-section">
+      <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+      <div class="w3-rest">
+        <input class="w3-input w3-border" name="first" required type="text" placeholder="Nombre">
+      </div>
+    </div>
+
+    <div class="w3-row w3-section">
+      <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+      <div class="w3-rest">
+        <input class="w3-input w3-border" name="last" required type="text" placeholder="Apellido">
+      </div>
+    </div>
+
+    <div class="w3-row w3-section">
+      <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
+      <div class="w3-rest">
+        <input class="w3-input w3-border" name="email" required type="email" placeholder="Correo">
+      </div>
+    </div>
+
+    <div class="w3-row w3-section">
+      <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
+      <div class="w3-rest">
+        <input class="w3-input w3-border" name="phone" type="text" placeholder="Telefono">
+      </div>
+    </div>
+
+    <div class="w3-row w3-section">
+      <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-pencil"></i></div>
+      <div class="w3-rest">
+        <input class="w3-input w3-border" name="message" required type="text" placeholder="Mensaje">
+      </div>
+    </div>
+
+    <button class="w3-button w3-block w3-section w3-light-blue w3-ripple w3-padding">Enviar</button>
+
+  </form>
+
+
+  <!--Etiqueta audio-->
+  <div class="w3-container w3-center">
+    <p>Rreproductor de musica</p>
+    <audio id="miAudio" autoplay src="Abduzcan.mp3"></audio>
+    <button onclick="subirvolume()" class="w3-button w3-hover-pale-green">+</button>
+    <button id="playpause" class="w3-button w3-hover-light-blue">°¬°</button>
+    <button onclick="bajarvolume()" class="w3-button w3-hover-pale-green">-</button>
+    <p id="labeltrack"></p>
+  </div>
+
+
+  <!--Etiqueta
+  <div class="w3-container w3-teal">
+    <p>My footer information</p>
+  </div>-->
+
+  <!--Inicia java script-->
+  <script>
+    //Controlador audio
+    let a = document.getElementById("miAudio")
+    a.volume = 0.4
+    function subirvolume() {
+      a.volume += 0.1
+    }
+    function bajarvolume() {
+      a.volume -= 0.1
+    }
+    let pp = document.getElementById("playpause")
+    let sound = true
+    pp.addEventListener("click", function () {
+      if (sound) {
+        a.pause()
+        sound = false
+        document.getElementById("playpause").innerHTML = "°-°"
+      } else {
+        a.play()
+        sound = true
+        document.getElementById("playpause").innerHTML = "°¬°"
+      }
+
+    })
+    //Etiqueta que muestra la pista que esta sonando
+    document.getElementById("labeltrack").innerHTML = a.src
+
+    //Navegavion o barra de menus
+    function myFunction() {
+      var x = document.getElementById("demo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+
+    //Carrusel- Comentario JS
+    var myIndex = 0;
+    carousel();
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 4000); // Change image every 2 seconds
+    }
+  </script>
+
+
+</body>
+
+</html>
